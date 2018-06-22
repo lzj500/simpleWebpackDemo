@@ -1,7 +1,6 @@
-console.log('app.js');
-import '../css/common.css';
-import Layer from '../template/layer/layer.js';
-import Vue from 'vue';
+import '../css/common.css';//引入CSS样式
+import Layer from '../template/layer/layer.js';//引入一个组件
+import Vue from 'vue';//引入vuejs,vue安装参考官网
 const  App=function () {
 
     var divObj=document.createElement("div");

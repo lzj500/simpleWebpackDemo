@@ -9,7 +9,8 @@
     ]
   },
   "scripts": {
-    "webpack": "webpack --mode development --progress --display-modules --display-reasons",
+    "webpack": "webpack --mode development",
+    "webpack-more": "webpack --mode development --progress --display-modules --display-reasons",
     "webpack-watch": "webpack --mode development --progress --display-modules --display-reasons --watch "
   },
   "author": "",
@@ -21,8 +22,10 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-latest": "^6.24.1",
     "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "html-withimg-loader": "^0.1.16",
     "style-loader": "^0.21.0",
     "vue": "^2.5.16",
     "webpack": "^4.12.0",

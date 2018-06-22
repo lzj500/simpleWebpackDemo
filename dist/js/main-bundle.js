@@ -208,6 +208,17 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!./c
 
 /***/ }),
 
+/***/ "./src/images/timg.jpg":
+/*!*****************************!*\
+  !*** ./src/images/timg.jpg ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("module.exports = __webpack_require__.p + \"1211363984a409c04699ca4c241cd4d2.jpg\";\n\n//# sourceURL=webpack:///./src/images/timg.jpg?");
+
+/***/ }),
+
 /***/ "./src/script/app.js":
 /*!***************************!*\
   !*** ./src/script/app.js ***!
@@ -216,7 +227,7 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!./c
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_common_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/common.css */ \"./src/css/common.css\");\n/* harmony import */ var _css_common_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_common_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _template_layer_layer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/layer/layer.js */ \"./src/template/layer/layer.js\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\nconsole.log('app.js');\n\n\n\nconst App = function () {\n\n    var divObj = document.createElement(\"div\");\n    var layer1 = new _template_layer_layer_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\n    divObj.innerHTML = layer1.tpl;\n    var first = document.body.firstChild; //得到页面的第一个元素\n    document.body.insertBefore(divObj, first); //在得到的第一个元素之前插入\n\n    var app = new vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"]({\n        el: '#app',\n        data: {\n            message: 'Hello Vue!'\n        }\n    });\n};\nnew App();\n\n//# sourceURL=webpack:///./src/script/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_common_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/common.css */ \"./src/css/common.css\");\n/* harmony import */ var _css_common_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_common_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _template_layer_layer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/layer/layer.js */ \"./src/template/layer/layer.js\");\n/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\n //引入CSS样式\n //引入一个组件\n //引入vuejs,vue安装参考官网\n\nconst App = function () {\n\n    var divObj = document.createElement(\"div\");\n    var layer1 = new _template_layer_layer_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\n    divObj.innerHTML = layer1.tpl;\n    var first = document.body.firstChild; //得到页面的第一个元素\n    document.body.insertBefore(divObj, first); //在得到的第一个元素之前插入\n\n    var app = new vue__WEBPACK_IMPORTED_MODULE_2__[\"default\"]({\n        el: '#app',\n        data: {\n            message: 'Hello Vue!'\n        }\n    });\n};\nnew App();\n\n//# sourceURL=webpack:///./src/script/app.js?");
 
 /***/ }),
 
@@ -236,9 +247,9 @@ eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader!
   !*** ./src/template/layer/layer.html ***!
   \***************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = \"<div class=\\\"layer\\\" id=\\\"app\\\">\\r\\n    this is <span>layer</span>\\r\\n<p> {{ message }}</p></div>\";\n\n//# sourceURL=webpack:///./src/template/layer/layer.html?");
+eval("module.exports = \"<div class=\\\"layer\\\" id=\\\"app\\\">\\r    this is <span>layer</span>\\r<p> {{ message }}</p>\\r<img src=\"+JSON.stringify(__webpack_require__(/*! ../../images/timg.jpg */ \"./src/images/timg.jpg\"))+\" height=\\\"50\\\" />\\r</div>\"\n\n//# sourceURL=webpack:///./src/template/layer/layer.html?");
 
 /***/ }),
 

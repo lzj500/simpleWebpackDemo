@@ -1,5 +1,6 @@
 var htmlWebpackPlugin = require('html-webpack-plugin');
 var path=require('path');
+
 module.exports = {
     entry: {
         main: './src/script/app.js'//入口文件js
@@ -20,15 +21,26 @@ module.exports = {
                 test: /\.css$/,
                 loader: 'style-loader!css-loader'
             },
+
             {
-                test: /\.(html)$/,
+                test: /\.html$/,
                 use: {
-                    loader: 'html-loader',
+                    loader: 'html-withimg-loader',
                     options: {
                         attrs: [':data-src']
                     }
                 }
+            },
+            {
+                test: /\.(jpg)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {}
+                    }
+                ]
             }
+
         ]
     },
     plugins: [

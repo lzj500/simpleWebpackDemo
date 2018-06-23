@@ -1,5 +1,6 @@
 var htmlWebpackPlugin = require('html-webpack-plugin');
-var path=require('path');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+var path = require('path');
 
 module.exports = {
     entry: {
@@ -14,7 +15,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,//排除目录
-                include: path.resolve(__dirname,'src') ,//编译的目录
+                include: path.resolve(__dirname, 'src'),//编译的目录
                 loader: "babel-loader"
             },
             {
@@ -32,11 +33,17 @@ module.exports = {
                 }
             },
             {
-                test: /\.(jpg)$/,
+                test: /\.json$/,
+                use: 'json-loader'
+            },
+            {
+                test: /\.(jpg|png|gif|json)$/,
                 use: [
                     {
                         loader: 'file-loader',
-                        options: {}
+                        options: {
+                            name: 'images/[name].[ext]',
+                        }
                     }
                 ]
             }
@@ -46,8 +53,14 @@ module.exports = {
     plugins: [
         new htmlWebpackPlugin({
             filename: 'index.html',
-            template:"src/index.html"
-        })
+            template: "src/index.html"
+        }),
+        new CopyWebpackPlugin([
+            {
+                from: 'src/manifest.json',
+                to:'manifest.json'
+            }
+        ])
     ],
     resolve: {
         alias: {

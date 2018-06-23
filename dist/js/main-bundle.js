@@ -215,7 +215,7 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!./c
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"1211363984a409c04699ca4c241cd4d2.jpg\";\n\n//# sourceURL=webpack:///./src/images/timg.jpg?");
+eval("module.exports = __webpack_require__.p + \"images/timg.jpg\";\n\n//# sourceURL=webpack:///./src/images/timg.jpg?");
 
 /***/ }),
 
